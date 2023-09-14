@@ -1,0 +1,109 @@
+/* Set the shortcuts bar at the bottom with spacing */
+#shortcuts {
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    top: 90%;
+    flex-wrap: wrap; 
+}
+
+/* stylize buttons in shortbuts bar */
+#shortcuts button {
+    color: black;
+    border-radius: 8px;
+    background-color: white;
+    transition-duration: 0.4s;
+}
+
+/* change button color on hover */
+#shortcuts button:hover {
+    background-color: black;
+    color: white;
+}
+
+/* set body to full viewport size so background covers everything */
+body {
+    height: 100vh;
+    width: 100vw;
+}
+
+/* sytlize search bar and set size */
+.search {
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+    border: 1px solid black;
+    width: 350px;
+    height: 35px;
+    padding-left: 10px;
+    font-size: 20px;
+    
+    
+}
+
+/* general class used for cetnering elements */
+.center {
+    text-align: center;
+}
+
+/* position container with time, data, upload, usage, and removal buttons */
+#block {
+    position: absolute;
+    left: 10px;
+    top: 0px;
+    
+}
+
+/* set general parameters for extension */
+* {
+    color: white;
+    overflow: hidden;
+}
+
+/* stylize button for dropdown menu */
+.dropbtn {
+    background-color: black;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    border-radius: 8px;
+}
+ 
+/* stylize and position dropdown menu */
+.dropdown {
+    position: absolute;
+    display: inline-block;
+    top: 10px;
+    right: 10px;
+    overflow: visible;
+}
+
+/* set dropdown content */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    right: 0;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+  
+/* stylize links */
+.dropdown-content a {
+    color: rgb(0, 0, 0);
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* set links background color to change when hovered over */
+.dropdown-content a:hover {background-color: #f1f1f1;}
+
+/* displays dropdown menu when hovering over button */
+.dropdown:hover .dropdown-content {display: block;}
+
+/* changes color of dropdown button to gray when hovering over it */
+.dropdown:hover .dropbtn {background-color: gray;}

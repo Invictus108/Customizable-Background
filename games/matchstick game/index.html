@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Matchstick Game</title>
+    </head>
+    <body>
+        <h1>Matchstick Game</h1>
+        <button id="rules">Rules</button>
+        <div id="startingInfo">
+            <h2>Please Enter How Many Matches You Want to Start With  </h1>
+            <input type="text" id="startingMatches">
+            <h2>Please Enter Max Matches You Can Remove In One Turn  </h1>
+            <input type="text" id="removeMatches">
+            <button id="submitbounds">Submit</button>
+        </div>
+        <h1>Number of Matches Remaining: </h1>
+        <h1 id="numMatches">0</h1>
+        <h1 id="player">Player 1 Please Enter Number of Matches to Remove</h1>
+        <input type="text" id="input">
+        <button id="submit">Submit</button>
+        <br><br>
+        <div id="matches">
+            <h1 id="visual1">|||||||||||||||||||||||||||||||||||||</h1>
+        </div>
+        <br><br>
+        <a id="back" href="../index.html"><button>Back</button></a>
+    </body>
+
+</html>
+<style>
+
+    * {
+        text-align: center;
+    }
+
+    /* style starting info */
+    #startingInfo {
+        display: inline-flex;
+        overflow-wrap: normal;
+        
+    }
+
+    /* set size of mathc box and allow user to scroll to see them all */
+    #matches {
+        overflow: scroll;
+        height: 200px;
+    }
+
+    /* set popup size */
+    html {
+        width: 600px;
+        height: 600px;
+    }
+
+
+</style>
+
+<script src="script.js"></script>
